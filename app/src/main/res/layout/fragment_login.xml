@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.extremus.kittuov.tapquick.fragments.Login"
+    android:orientation="vertical"
+    android:gravity="center">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect"
+            android:text="@string/play_as_guest"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/glogin_btn"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:onClick="guestLogin" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_below="@id/glogin_btn"
+            android:id="@+id/login_btn"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect"
+            android:text="@string/login"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/view_vertical_margin"
+            android:layout_marginBottom="@dimen/view_vertical_margin"/>
+</RelativeLayout>

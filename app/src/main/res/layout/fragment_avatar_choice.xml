@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.extremus.kittuov.tapquick.fragments.login.AvatarChoice"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_an_avatar"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="@dimen/title_vertical_margin"
+        android:textSize="@dimen/font_size_title"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/avatarGrid"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:columnWidth="50dp"
+        android:layout_gravity="center"
+        android:numColumns="5"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="@dimen/grid_vertical_margin"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/title_vertical_margin"
+        android:paddingRight="@dimen/title_vertical_margin">
+        <Button
+            android:text="@string/login"
+            android:onClick="atmptGuestLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect"
+            android:layout_marginTop="@dimen/view_vertical_margin"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:text="@string/cancel"
+            android:onClick="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect"
+            android:layout_marginTop="@dimen/view_vertical_margin"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
